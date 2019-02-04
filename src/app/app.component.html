@@ -1,0 +1,11 @@
+
+{{ title }}
+
+<input [(ngModel)]="task" type="text">
+<button (click)="add()" >Adicionar na lista</button>
+<ul>
+  <li *ngFor="let item of tasks">
+    {{ item }}
+  </li>
+</ul>
+
